@@ -1,0 +1,43 @@
+<template lang="pug">
+.home
+  plug(_name="topBarInfo" _src="https://template.owo.ink/48afceba316dc1e1.owo")
+  img.bg-image(src="@|bg.jpg|")
+  plug(_name="editor" _src="./src/modules/editor.owo")
+  .card-box.w1000.clear
+    plug(_name="card" _src="./src/modules/card.owo")
+    plug(_name="card" _src="./src/modules/card.owo")
+    plug(_name="card" _src="./src/modules/card.owo")
+    plug(_name="card" _src="./src/modules/card.owo")
+    plug(_name="card" _src="./src/modules/card.owo")
+    plug(_name="card" _src="./src/modules/card.owo")
+    plug(_name="card" _src="./src/modules/card.owo")
+    plug(_name="card" _src="./src/modules/card.owo")
+    plug(_name="card" _src="./src/modules/card.owo")
+  plug(_name="copyright" _src="https://template.owo.ink/060579f0b4f1bcaa.owo")
+</template>
+
+<script>
+  function showQRSH() {
+    document.getElementById('hideQRSH').style.display = 'block'
+  }
+  module.exports = {
+    created: function () {
+
+    }
+  }
+</script>
+
+
+<style lang="less">
+.bg-image {
+  width: 100%;
+}
+.card-box.w1000 {
+  margin-top: 40px;
+}
+.card {
+  float: left;
+  padding: 20px;
+  margin: 17px;
+}
+</style>

@@ -1,0 +1,53 @@
+<template lang="pug">
+.editor.w1000.clear
+  .left.fl.item 投票规则
+  .right.fl.item
+    p &emsp;&emsp;今年以来，面对我国大面积爆发新型冠状病毒肺炎疫情，众多新业态、新应用、新服务的“内容科技”企业为支援疫情防控工作做出了积极贡献，体现出对国家治理体系和治理能力现代化的强大潜力。 对此，人民网拟于2月下旬至4月下旬举办人民 战“疫”内容科技大赛，通过大赛表彰先进、树立典型、鼓舞士气、促进合作。
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+
+    }
+  }
+</script>
+
+
+<style lang="less">
+.bg-image {
+  width: 100%;
+}
+.editor {
+  height: 180px;
+}
+.item {
+  height: 100%;
+}
+.left {
+  width: 110px;
+  font-size: 40px;
+  padding: 45px;
+  height: 110px;
+  text-align: center;
+  color: #061f65;
+  font-weight: bold;
+  font-family: 'SimSun';
+  line-height: 55px;
+}
+.right {
+  width: 682px;
+  background-image: url('@|line-box.png|');
+  background-repeat: no-repeat;
+  background-position: center 30px;
+  font-size: 17px;
+  line-height: 1.7;
+  padding: 40px;
+  height: 120px;
+  background-size: 100%;
+  p {
+    overflow: auto;
+    height: 112px;
+  }
+}
+</style>

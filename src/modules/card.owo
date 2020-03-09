@@ -1,0 +1,69 @@
+<template lang="pug">
+.card
+  img.show(src="@|show.jpg|")
+  .text-box
+    h2 &emsp;&emsp;标题标题标题标题标题标题标题标题标题标题
+    h3 &emsp;&emsp;展览介绍展览介绍展览介绍展览介绍展览介绍展览介绍展览介绍展览介绍展览介绍项目介绍
+  .button.clear(onclick="showQRSH()")
+    img.heart.fl(src="@|heart.png|")
+    .text.fl 投票
+    //- .num.fl 745
+  .more
+    a(src="#") 观看视频 
+</template>
+
+
+<style lang="less">
+.card {
+  width: 257px;
+  height: 410px;
+  border: 1px solid #dcdcdc;
+}
+.text-box {
+  height: 166px;
+  overflow: auto;
+  color: #252525;
+  line-height: 1.7;
+}
+h2 {
+  font-size: 16px;
+}
+h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+.button {
+  background-color: #03489f;
+  height: 40px;
+  line-height: 40px;
+  width: 110px;
+  border-radius: 5px;
+  margin: 10px auto;
+  color: white;
+  cursor: pointer;
+  .heart {
+    height: 20px;
+    margin: 10px;
+    display: block;
+  }
+  .text {
+    font-size: 18px;
+    width: 60px;
+    text-align: center;
+  }
+  .num {
+    width: 54px;
+    text-align: center;
+  }
+}
+.button:hover {
+  box-shadow: 3px 3px 5px #ccc;
+}
+.more, .more a {
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+}
+</style>
